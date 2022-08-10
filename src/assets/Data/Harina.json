@@ -1,0 +1,58 @@
+[
+  {
+      "id": 1,
+      "title": "Harina de trigo Hacendado",
+      "price":0.75,
+      "purity":20,
+      "origin":"Portugal",
+      "url":"../../img/products/01.jpg"
+  },
+  {
+      "id": 2,
+      "title": "Harina de maíz blanco",
+      "price":1.60,
+      "purity":20,
+      "origin":"Espanha",
+      "url":"../../img/products/02.jpg"
+  },
+  {
+      "id": 3,
+      "title": "Harina de fuerza Hacendado",
+      "price":0.95,
+      "purity":90,
+      "origin":"Colombia",
+      "url":"../../img/products/03.jpg"
+  },
+  {
+      "id": 4,
+      "title": "Preparado para bizcochos",
+      "price":1.05,
+      "purity":30,
+      "origin":"Morroco",
+      "url":"../../img/products/04.jpg"
+  },
+  {
+      "id": 5,
+      "title": "Harina integral de trigo",
+      "price":0.95,
+      "purity":100,
+      "origin":"XXXX",
+      "url":"../../img/products/05.jpg"
+  },
+  {
+      "id": 6,
+      "title": "Harina de espelta Hacendado ",
+      "price":1.45,
+      "purity":80,
+      "origin":"Brasil",
+      "url":"../../img/products/06.jpg"
+  },
+  {
+      "id": 7,
+      "title": "Harina de espelta Hacendado ",
+      "price":1.45,
+      "purity":80,
+      "origin":"Brasil",
+      "url":"../../img/products/06.jpg"
+  }
+]

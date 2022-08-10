@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "ERIKA CLASSIC",
+        "price":125.00,
+        "url":"../../img/img_erika_classic1.webp"
+    },
+    {
+        "id": 2,
+        "title": "CLUBMASTER CLASSIC",
+        "price":140.00,
+        "url":"../../img/img_clubmaster_classic1.webp"
+    },
+    {
+        "id": 3,
+        "title": "ROUND METAL",
+        "price":142.00,
+        "url":"../../img/img_roundmetal_1.webp"
+    },
+    {
+        "id": 4,
+        "title": "PLANAS HEXAGONALES",
+        "price":144.00,
+        "url":"../../img/img_planas_hexagonales1.webp"
+    },
+    {
+        "id": 5,
+        "title": "RB2180",
+        "price":135.00,
+        "url":"../../img/img_rb2180_1.webp"
+    },
+    {
+        "id": 6,
+        "title": "WAYFARER CLASSIC",
+        "price":145.00,
+        "url":"../../img/img_wayfarer_classic1.webp"
+    }
+]

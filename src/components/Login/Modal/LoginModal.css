@@ -1,0 +1,21 @@
+.modalPaper {
+    background-image: url("../../../../public/img/teniente/login_harinapaper.png");
+    background-repeat: no-repeat;
+    height: 40rem;
+    width: 100%;
+    opacity: 80%;
+    border: none !important;
+   }
+
+   .formInput{
+    opacity: 60%;
+   }
+
+   .title{
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+   }
+
+   .text-muted{
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+   }
