@@ -4,7 +4,7 @@ import Shops from "../components/Shops/Shops";
 import About from "../components/About/About";
 import Contacts from "../components/Contacts/Contacts";
 import Login from "../components/Login/LoginPage";
-import Checkout from "../components/Checkout/Checkout"
+import Checkout from "../components/Checkout/Checkout";
 import { Route, Routes } from "react-router-dom";
 
 export const ProductsPages = () => {
@@ -21,6 +21,7 @@ export const ProductsPages = () => {
 
         <Route path="/login" element={<Login />} />
         <Route path="/checkout" element={<Checkout />} />
+
         <Route
           path="*"
           element={

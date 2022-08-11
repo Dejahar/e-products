@@ -3,7 +3,7 @@ import { useReducer } from "react";
 import { types } from "../types/types";
 import { authReducer } from "./authReducer";
 
-const AuthProvider = ({ children }) => {
+const CartProvider = ({ children }) => {
 
   const init = () => {
     const user = JSON.parse(localStorage.getItem('user'));
@@ -43,16 +43,11 @@ const AuthProvider = ({ children }) => {
     return !!user
   }
 
-  const cartList = () => {
-    const cart = JSON.parse(localStorage.getItem('myCart'));
-    return cart;
-  }
-
   return (
-    <AuthContext.Provider value={{ ...authState, login: login , logout: logout, userLogged: userLogged, cartList: cartList}}>
+    <AuthContext.Provider value={{ ...authState, login: login , logout: logout, userLogged: userLogged}}>
       {children}
     </AuthContext.Provider>
   );
 };
 
-export default AuthProvider;
+export default CartProvider;

@@ -30,8 +30,8 @@ const LoginModal = () => {
     <>
       <Button variant="Light" onClick={handleShow}>
         <img
-          className="img-fluid"
-          src="../img/enter.png"
+          className=""
+          src="../img/login_black.png"
           value="Login"
           alt="Login"
         />

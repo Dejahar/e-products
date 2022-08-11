@@ -4,6 +4,7 @@ import { Link, Outlet } from "react-router-dom";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import CartModal from "../Modal/CartModal";
 import { UserArea } from "../UserArea/UserArea";
+import { Toaster } from "react-hot-toast";
 
 function Dashboard() {
   const [myCart, setItems] = useState(
@@ -31,6 +32,7 @@ function Dashboard() {
   return (
     <div className="bg">
       <Navbar expand="lg">
+        <Toaster position="top-center" reverseOrder={false} />
         <Container>
           <Navbar>
             <img src="../img/teniente/promo.jpg" alt="logo-img" width="70rem" />

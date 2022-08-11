@@ -1,7 +1,7 @@
 import Products from "../../assets/Data/Harina.json";
 import { Nav, ButtonGroup } from "react-bootstrap";
 import AddButton from "../AddButton/AddButton";
-import WishlistBtn from "../WishlistBtn/WishlistBtn";
+import WishlistBtn from "../WishList/WishlistBtn/WishlistBtn";
 import { useReducer, useEffect } from "react";
 import "./ProductsContent.css";
 import { Container, Pagination } from "react-bootstrap";

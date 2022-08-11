@@ -1,23 +1,28 @@
 import { useState, useContext } from "react";
 import { Form, Button } from "react-bootstrap";
 import users from "../../assets/Data/users";
-import { AuthContext } from "../../auth/context/AuthContext"
+import { AuthContext } from "../../auth/context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 function LoginPage() {
   const [userData, setUserData] = useState({ email: "", password: "" });
-  const {login} = useContext(AuthContext);
+  const { login, userLogged } = useContext(AuthContext);
+  let navigate = useNavigate();
 
   const onSubmit = () => {
-    if ( users.find( (user) => userData.email === user.email && userData.password === user.password )
-    ) {
-      login(userData.email , userData.password);
-    }
+    if (!userLogged()) {
+      if ( users.find( (user) => userData.email === user.email && userData.password === user.password ) )
+      {
+        login(userData.email, userData.password);
+        navigate("/checkout", { replace: true });
+      }
+    } else navigate("/checkout", { replace: true });
   };
 
   return (
     <div className="d-flex flex-column min-vh-100 justify-content-center align-items-center">
       <img
-        className="rounded img-thumbnail rounded-pill"
+        className="img-thumbnail rounded-pill w-50"
         src="./img/teniente/promo.jpg"
         alt="Logo"
       ></img>{" "}
@@ -27,11 +32,11 @@ function LoginPage() {
           <Form.Control
             type="email"
             placeholder="Enter email"
-            onInputChange={(e) => {
+            onChange={(e) => {
               setUserData({ ...userData, email: e.target.value });
             }}
           ></Form.Control>{" "}
-          <Form.Text className="text-muted">
+          <Form.Text className="text-dark">
             Your email is public and you will be scammed{" "}
           </Form.Text>{" "}
         </Form.Group>
@@ -40,7 +45,7 @@ function LoginPage() {
           <Form.Control
             type="password"
             placeholder="Enter password"
-            onInputChange={(e) => {
+            onChange={(e) => {
               setUserData({ ...userData, password: e.target.value });
             }}
           ></Form.Control>{" "}

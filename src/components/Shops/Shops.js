@@ -4,7 +4,7 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 function Shops() {
   return (
     <Container>
-      <Row className="p-3 mb-2 font-weight-bold">
+      <Row className="p-3 mb-2 font-weight-bold ">
         <Col>
           <Row className="mb-2">
             <Col>
@@ -15,7 +15,7 @@ function Shops() {
               />
             </Col>
             <Col>
-              <div className="text-info">
+              <div className="backdrop bg-light bg-opacity-10 p-2 text-dark rounded">
                 <h5>Express Delivery</h5>
                 <p>Where you are! We deliver, no hassles no problems.</p>
               </div>
@@ -30,7 +30,7 @@ function Shops() {
               />
             </Col>
             <Col>
-              <div className="text-info">
+              <div className="backdrop bg-light bg-opacity-10 p-2 text-dark rounded">
                 <h5>Harina in your city?</h5>
                 <p>
                   It is a long established fact that a reader will be distracted
@@ -48,7 +48,7 @@ function Shops() {
               />
             </Col>
             <Col>
-              <div className="text-info">
+              <div className="backdrop bg-light bg-opacity-10 p-2 text-dark rounded">
                 <h5>Where does it come from?</h5>
                 <p>
                   Contrary to popular belief, Lorem Ipsum is not simply random
